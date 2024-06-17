@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+ background-image: url("./assets/pokemonBg.jpg") ;
+  height: 100vh;
+  display: flex;
+}
+
+#container{
+  height: 100vh;
+  display: grid;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

@@ -1,0 +1,143 @@
+.containerCard{
+display: flex;
+flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+#gerar{
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.pokemonCard{
+    
+margin-top: 40px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr ;
+   width: 250px;
+    height: 300px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    overflow:hidden;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    box-shadow: 0px 0px 30px lightblue;
+    font-style: normal;
+    transition: 500ms;
+  }
+  .pokemonCard:hover{
+    transform: scale(1.1);
+   
+
+      }
+      
+
+
+.image{
+  
+  grid-row: 1;
+  justify-self: center;
+}
+p{margin-left: 5px;
+margin: 0 auto;
+
+}
+.nome{
+  grid-row:1;
+  font-size: 20;
+  display: flex;
+  align-items: center;
+  border-bottom: 10px black;
+}
+.cardLow{
+  display: grid;
+  grid-row:2/4;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  background: url("./assets/texture.png");
+}
+.tipo{
+  grid-row:2;
+  font-size: 15px;
+  padding: 10px;
+
+}  
+.botoes{
+  grid-row:3;
+  display: flex;
+  justify-content: space-around;
+
+}
+button{
+
+    border: none;
+    background: transparent;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    
+    font-style: normal;
+}
+button:hover{
+   cursor: pointer;
+    transform: scale(1.1);
+    transition: 300ms;
+}
+.flip-container:hover .flipper{
+	transform: rotateY(360deg);
+
+}
+.flipper{
+	width: 100%;
+	height: 100%;
+	transition: transform 1.6s;
+	transform-style: preserve-3d;
+}
+.flipper{
+ 
+	position: relative;
+}
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.back{
+	transform: rotateY(180deg);
+}
+.front, .back{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+ .back img{
+margin-top: 40px;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px lightblue;
+  font-style: normal;
+  transition: 500ms;
+
+}
+.flip-container{
+
+
+  height: 400px;
+
+}
+
+
+
+
